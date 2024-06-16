@@ -1,0 +1,27 @@
+.projects_container {
+    padding: 1rem 0;
+}
+
+.projects_container h2 {
+    margin-bottom: 1rem;
+}
+
+.projects {
+    display: flex;
+    gap: 1rem;
+}
+
+.projects img {
+    width: 100%;
+    display: block;
+}
+
+.create_new_project {
+    background-image: url("https://bookface-static.ycombinator.com/assets/waas/ycombinator-logo-37cf030fbc255fc71d19aa21bd5b32076aa206e8fbd0121c9247db2adcbd7851.png");
+    background-position: center;
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #dfdfdf;
+}

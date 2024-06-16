@@ -1,0 +1,29 @@
+.tasks {
+  .task {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 1rem;
+
+    .task_title {
+      font-weight: bold;
+    }
+  }
+
+  .task > * {
+    padding-top: 1rem;
+  }
+
+  .task > *:first-child {
+    padding-top: 0;
+  }
+
+  .task > *:last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    padding: 1rem 0;
+  }
+}

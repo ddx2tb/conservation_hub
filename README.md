@@ -19,6 +19,10 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and
 load Inter, a custom Google Font.
 
+# Wireframe
+
+![Wireframee](/assets/images/conservation_hub.png "Wireframe")
+
 # Approach login
 
 ![Wireframee](/assets/images/approach_login.png "Login")
@@ -27,7 +31,4 @@ load Inter, a custom Google Font.
 
 ![Wireframee](/assets/images/approach_add_new_project.png "Add new project")
 
-# Wireframe
-
-![Wireframee](/assets/images/conservation_hub.png "Wireframe")
 

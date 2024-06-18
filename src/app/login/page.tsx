@@ -2,7 +2,7 @@
 
 import styles from "./page.module.scss";
 import axios from 'axios';
-import {setCookie, getCookie} from 'cookies-next';
+import {setCookie} from 'cookies-next';
 import {useEffect, useState} from "react";
 import {useRouter} from 'next/navigation';
 
@@ -24,13 +24,11 @@ const handleClick = async (setToken, setLoginError, username, password) => {
     if (loginRes !== undefined) {
         setCookie('tokens', loginRes.data?.access_token, {
             sameSite: 'strict',
-            // secure: true,
-            httpOnly: true,
+            secure: true,
+            // httpOnly: true,
         });
 
         setToken(loginRes.data?.access_token);
-
-        console.log('>>>>', loginRes.data?.access_token, getCookie('tokens'));
     } else {
         setLoginError(true);
     }
@@ -69,7 +67,8 @@ export default function Login() {
                         setPassword(e.target.value);
                     }}/>
                 </label>
-                <input type="button" value="Login" onClick={() => handleClick(setToken, setLoginError, username, password, )}/>
+                <input type="button" value="Login"
+                       onClick={() => handleClick(setToken, setLoginError, username, password,)}/>
             </div>
         </main>
     );
